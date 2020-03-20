@@ -21,17 +21,13 @@ app.use(
 app.use(express.static("public"));
 
 // initialize connection and database: todoListDB
-// mongoose.connect("mongodb://localhost:27017/todoListDB", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-//   useFindAndModify: false
-// });
-
-mongoose.connect("mongodb+srv://admin:admin@cluster0-j6bqy.mongodb.net/todoListDB?retryWrites=true&w=majority", {
+mongoose.connect("mongodb://localhost:27017/todoListDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
 });
+
+
 
 
 // create schemas for documents
