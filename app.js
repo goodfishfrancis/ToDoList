@@ -30,6 +30,7 @@ mongoose.connect("mongodb://localhost:27017/todoListDB", {
 
 
 
+
 // create schemas for documents
 const itemsSchema = new mongoose.Schema({
   name: String
